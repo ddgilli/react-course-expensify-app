@@ -3,3 +3,4 @@ notes.txt
 package-lock.json
 yarn-error.log
 .vscode/
+expensify-app/

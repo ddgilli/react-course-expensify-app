@@ -1,11 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { addExpense } from './actions/expenses';
-import { setTextFilter } from './actions/filters';
-import { sortByAmount } from './actions/filters';
-import { sortByDate } from './actions/filters';
-import getVisibleExpenses from './selectors/expenses';
 import AppRouter from "./routers/AppRouter";
 import configureStore from './store/configureStore';
 import 'normalize.css/normalize.css';
@@ -14,7 +9,6 @@ import 'react-dates/lib/css/_datepicker.css';
 
 //CREATE THE STORE
 const store = configureStore();
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />

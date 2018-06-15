@@ -5,6 +5,7 @@ git status - View the changes in your project code
 git add "file" - Add files to your staging area
 git add . - adds all modified files to staging
 git commit -m "comments"- Creates a new commit with files from staging
+git commit -a - commits changed files, does NOT commit new files
 #git push origin master - syncs local and github files
 git push - syncs local and github files
 git log - View recent commits

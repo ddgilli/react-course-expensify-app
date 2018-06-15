@@ -10,8 +10,13 @@ git push - syncs local and github files
 git log - View recent commits
 "git rm --cached react-course-expensify-app" - removes this from staging
 
-BASH commands
+#BASH commands
 ls -a ~/.ssh - find ssh key
 eval "$(ssh-agent -s)" - starts agent (or lets you know it's running)
 clip < ~/.ssh/id_rsa.pub - copies public key to clipboard
+
+#Server
+server/server.js - starts server
+
+yarn install (?) rebuilds node_modules
 

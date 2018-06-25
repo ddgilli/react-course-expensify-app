@@ -7,3 +7,5 @@ yarn-error.log
 expensify-app/
 react-course-expensify-app/
 github-git-cheat-sheet.pdf
+.env.test
+.env.development

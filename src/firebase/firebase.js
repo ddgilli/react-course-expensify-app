@@ -17,7 +17,20 @@ import * as firebase from 'firebase';
   export { firebase, database as default };
 
 
+ // database.ref('expenses')
+  // .once('value')
+  // .then((snapshot) => {
+  //   const expenses = [];
 
+  //   snapshot.forEach((childSnapshot) => {
+  //     expenses.push({
+  //       id: childSnapshot.key,
+  //       ...childSnapshot.val()
+  //     });
+  //   });
+  //    console.log(expenses);
+  // });
+ 
 
 
   // //child removed - subscription

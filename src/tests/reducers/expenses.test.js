@@ -66,4 +66,30 @@ test('should not edit non-existent expense', () => {
   const state = expensesReducer(expenses, action);
   expect(state).toEqual(expenses);
 });
+
+test('should set expenses', () => {
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses
+  }
+  const state = expensesReducer(expenses, action);
+  expect(state).toEqual(expenses);
+});
+  
+test('should set expenses', () => {
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses: expenses
+  }
+  let state = expensesReducer(expenses, action);
+  expect(state).toEqual(expenses);
+
+  const newExpenses = [expenses[0], expenses[1]];
+  const newAction = {
+    type: 'SET_EXPENSES',
+    expenses: newExpenses
+  }
+  state = expensesReducer(newExpenses, newAction);
+  expect(state).toEqual(newExpenses);
+});
   

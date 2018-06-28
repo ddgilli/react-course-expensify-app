@@ -79,4 +79,20 @@ export const editExpense = (id, updates) => (
     };
 }
 
- 
+export const startRemoveExpense = ({ id }) => {
+  return (dispatch) => {
+    return database.ref(`expenses/${id}`).remove().then(() => {
+      dispatch(removeExpense({ id }));    
+    });
+  }
+}
+
+// export const startRemoveExpense = ({ id }) => {
+//   return (dispatch) => {
+//     return database.ref('expenses').remove({ id }).then((ref) => {
+//       dispatch(removeExpense({
+//         id: ref.key
+//       }));
+//     });
+//   };
+// };

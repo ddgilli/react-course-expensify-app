@@ -2,7 +2,6 @@ import React from 'react';
 import { connect} from 'react-redux';
 import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expenses';
-import { removeExpense } from '../actions/expenses';
 
 //local component starts with just a declaration
 export const ExpenseList = (props) => (

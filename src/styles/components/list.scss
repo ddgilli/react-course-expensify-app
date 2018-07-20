@@ -1,16 +1,19 @@
 .list-header {
   background: $off-white;
   border: 1px solid darken($off-white, 7%);
-  color: $grey;
+  color: $dark-grey;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: $s-size $m-size;
+  padding: $s-size $s-size;
+  height: 50px;
+
 }
 
 .list-body {
   margin-bottom: $m-size;
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: $l-size;
+    margin-bottom: $s-size;
   }
 }
 

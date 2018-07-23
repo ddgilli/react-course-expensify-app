@@ -10,8 +10,8 @@ const ButtonModal = (props) => ( //implicit return statement
     onRequestClose ={props.onCancel}
   >
     <h3 className="modal__title">Confirm Delete?</h3>
-    <button className="button"onClick={props.removeExpense}>Yes</button>
-    <button className="button"onClick={props.onCancel}>Cancel</button>
+    <button className="button--modal" onClick={props.removeExpense}>Yes</button>
+    <button className="button--modal" onClick={props.onCancel}>Cancel</button>
   </Modal>
 );
 
